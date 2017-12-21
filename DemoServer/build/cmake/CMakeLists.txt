@@ -10,8 +10,15 @@ endif()
 
 include(${CMAKE_CURRENT_LIST_DIR}/conan.cmake)
 
+set(conanOptions)
+
+# if a specific toolchain e.g. form ARM build was specified, then pass it on to the Connected Vision Conan package as an option
+if(CMAKE_TOOLCHAIN_FILE)
+	set(conanOptions "ConnectedVision:toolchain=${CMAKE_TOOLCHAIN_FILE}")
+endif()
+
 # call Conan CMake without targets
-conan_cmake_run(REQUIRES "ConnectedVision/0.0.1@covi/stable" BASIC_SETUP BUILD outdated)
+conan_cmake_run(REQUIRES "ConnectedVision/0.0.1@covi/stable" OPTIONS "${conanOptions}" BASIC_SETUP BUILD outdated)
 
 # function for extracting parameters from conanbuildinfo.cmake file generated as a result of calling conan_cmake_run
 function(get_conan_variable name result)
@@ -26,7 +33,7 @@ get_conan_variable("CONAN_INCLUDE_DIRS_CONNECTEDVISION" includeDir)
 include(${includeDir}/common.cmake)
 
 # call Conan CMake with targets
-conan_cmake_run(REQUIRES "ConnectedVision/0.0.1@covi/stable" BASIC_SETUP CMAKE_TARGETS BUILD outdated)
+conan_cmake_run(REQUIRES "ConnectedVision/0.0.1@covi/stable" OPTIONS "${conanOptions}" BASIC_SETUP CMAKE_TARGETS BUILD outdated)
 
 add_subdirectory(../../../Skeleton/build/cmake Skeleton)
 
