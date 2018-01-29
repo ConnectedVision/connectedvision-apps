@@ -83,8 +83,10 @@ if(MSVC)
 	# set startup project
 	set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT ${PROJECT_NAME})
 	
-	# set debug working directory so that the same data folder will be used as data folder for all configurations when launching the configuration from within visual studio
-	set_target_properties(${PROJECT_NAME} PROPERTIES VS_DEBUGGER_WORKING_DIRECTORY "${CMAKE_INSTALL_PREFIX}/bin/")
+	# set debugger working directory so that the same data directory will be used for all configurations (Debug/Release) when starting the server from within Visual Studio
+	set(binDir "${CMAKE_INSTALL_PREFIX}/bin")
+	file(MAKE_DIRECTORY "${binDir}")
+	set_target_properties(${PROJECT_NAME} PROPERTIES VS_DEBUGGER_WORKING_DIRECTORY "${binDir}")
 endif()
 
 get_bin_install_directory(dst)
