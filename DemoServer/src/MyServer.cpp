@@ -4,7 +4,6 @@
 */
 
 #include "MyServer.h"
-#include <ConnectedVisionModule.h>
 
 using namespace ConnectedVision;
 

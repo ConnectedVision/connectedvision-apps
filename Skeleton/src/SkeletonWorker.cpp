@@ -43,7 +43,7 @@ void SkeletonWorker::run()
 	LOG_INFO_CONFIG("worker start", configID);
 
 	// get status
-	auto statusStore = this->module->getStatusStore();
+	auto statusStore = this->module.getStatusStore();
 	auto status = statusStore->getByID(configID)->copy();
 
 	// find last processed index
@@ -56,7 +56,7 @@ void SkeletonWorker::run()
 	// reset status
 	status->resetStableResults();
 	// delete previous results
-	this->module->deleteResults( this->config );
+	this->module.deleteResults( this->config );
 #endif
 
 	// update status timestamps
@@ -74,11 +74,11 @@ void SkeletonWorker::run()
 
 		// get input pins
 		// PNG input
-		ConnectedVision::shared_ptr<InputPin_PNG> inputPngPin = boost::dynamic_pointer_cast<InputPin_PNG>( this->module->getInputPin( this->config, InputPin_PNG::PinID() ) ); // get input pin from pool and cast to PNG pin
+		ConnectedVision::shared_ptr<InputPin_PNG> inputPngPin = boost::dynamic_pointer_cast<InputPin_PNG>( this->module.getInputPin( this->config, InputPin_PNG::PinID() ) ); // get input pin from pool and cast to PNG pin
 		auto pngStatus = inputPngPin->start(); // start previous module and get current status
 
 		// Detections input
-		ConnectedVision::shared_ptr<InputPin_Skeleton_input_Detections> inputDetectionsPin = boost::dynamic_pointer_cast<InputPin_Skeleton_input_Detections>( this->module->getInputPin( this->config, InputPin_Skeleton_input_Detections::PinID() ) ); // get input pin from pool and cast to Detections pin
+		ConnectedVision::shared_ptr<InputPin_Skeleton_input_Detections> inputDetectionsPin = boost::dynamic_pointer_cast<InputPin_Skeleton_input_Detections>( this->module.getInputPin( this->config, InputPin_Skeleton_input_Detections::PinID() ) ); // get input pin from pool and cast to Detections pin
 		auto inputDetectionsStatus = inputDetectionsPin->start(); // start previous module and get current status
 		pinID_t inputDetectionsOutputPinID = inputDetectionsPin->getOutputPinID(); // map input pin ID to output pin ID
 		auto inputDetectionsStableResults = inputDetectionsStatus.find_stableResultsByPinID( inputDetectionsOutputPinID );
@@ -87,7 +87,7 @@ void SkeletonWorker::run()
 
 		// get output store
 		// Average store
-		auto storeAverage = dynamic_cast<SkeletonModule *>(this->module)->storeManagerAverage->getReadWriteStore(configID);
+		auto storeAverage = this->module.storeManagerAverage->getReadWriteStore(configID);
 
 // TODO --> additional stores / output pins come HERE! <--
 
@@ -104,28 +104,28 @@ void SkeletonWorker::run()
 		{
 			// read config params (if your module does support/have dynamic parameters get them here inside worker loop on every iteration with function module->getUpdatedParams(configID))
 			Class_Skeleton_params params;
-			params.parseJson( this->module->getUpdatedParams(this->config->getconst_id()) );
+			params.parseJson( this->module.getUpdatedParams(this->config->getconst_id()) );
 
 			// get status from previous module
 			inputDetectionsStatus = inputDetectionsPin->getStatus();
 			inputDetectionsStableResults = inputDetectionsStatus.find_stableResultsByPinID( inputDetectionsOutputPinID );
 
 			// if there is no new input data, then wait for some time and try again
-			if ( inputDetectionsStatus.is_status_running() && index > inputDetectionsStableResults->getconst_indexEnd() && this->go )
+			if ( inputDetectionsStatus.is_status_running() && index > inputDetectionsStableResults->getconst_indexEnd() && this->controller.intermediateContinueCheck())
 			{
-				this->sleep_ms( 1000 );
+				sleep_ms(1000);
 				continue;
 			}
 
 			// process all data we got so far
-			for (; index <= inputDetectionsStableResults->getconst_indexEnd() && this->go; ++index)
+			for (; index <= inputDetectionsStableResults->getconst_indexEnd() && this->controller.intermediateContinueCheck(); ++index)
 			{
 				// get Detections data
 				auto detections = inputDetectionsPin->getByIndex( index );
 				
 				if ( !detections )
 				{
-					throw std::runtime_error("Detections not found for index: " + intToStr(index) );
+					throw std::runtime_error("Detections not found for index: " + intToStr(index));
 				}
 
 				// get image (querying end timestamp - 1 returns the data object with a timestamp equal to or greater than the specified timestamp)
@@ -185,13 +185,13 @@ void SkeletonWorker::run()
 			statusStore->save_copy(status);
 #endif
 
-		} while ( inputDetectionsStatus.is_status_running() && this->go ); // do-while there is input data to process
+		} while ( inputDetectionsStatus.is_status_running() && this->controller.nextIterationStep()); // do-while there is input data to process
 
 		// update status
 		status->set_estimatedFinishTime( sysTime() );
 		status->set_systemTimeProcessing( sysTime() );
 
-		if ( this->go )
+		if (this->controller.intermediateContinueCheck())
 		{
 			// worker has finished
 			status->set_progress( 1.0 );

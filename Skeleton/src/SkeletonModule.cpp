@@ -25,33 +25,8 @@ namespace Skeleton {
 
 using namespace ConnectedVision;
 
-SkeletonModule::SkeletonModule() : ConnectedVisionModule(_moduleDescription, _inputPinDescription, _outputPinDescription)
+SkeletonModule::SkeletonModule() : Module_BaseClass(_moduleDescription, _inputPinDescription, _outputPinDescription)
 {
-
-}
-
-void SkeletonModule::initModule( IModuleEnvironment *env ) 
-{
-	LOG_SCOPE;
-
-	// clean up module before init
-	releaseModule();
-
-	// call parent init
-	ConnectedVisionModule::initModule(env);
-}
-
-void SkeletonModule::releaseModule() 
-{
-	LOG_SCOPE;
-
-	// call parent release
-	ConnectedVisionModule::releaseModule();
-
-	// reset store managers
-	this->storeManagerAverage.reset();	
-
-// TODO --> do additional clean-up HERE! <--
 
 }
 
@@ -111,20 +86,18 @@ boost::shared_ptr<IConnectedVisionOutputPin > SkeletonModule::generateOutputPin(
 	throw runtime_error("invalid pinID: " + pinID);
 }
 
-boost::shared_ptr<IConnectedVisionAlgorithmWorker> SkeletonModule::createWorker(IModuleEnvironment *env, boost::shared_ptr<const Class_generic_config> config)
+std::unique_ptr<IWorker> SkeletonModule::createWorker(IWorkerControllerCallbacks &controller, ConnectedVision::shared_ptr<const Class_generic_config> config)
 {
-	LOG_SCOPE;
-
 	// create worker instance
-	return boost::make_shared<SkeletonWorker>(env, this, config);
+	std::unique_ptr<IWorker> ptr(new SkeletonWorker(*this, controller, config));
+
+	return ptr;
 }
 
-void SkeletonModule::deleteResults(const boost::shared_ptr<const Class_generic_config> config)
+void SkeletonModule::deleteAllData(const id_t configID)
 {
-	LOG_SCOPE_CONFIG( config->getconst_id() );
-
 	// delete all results for configID
-	this->storeManagerAverage->getReadWriteStore( config->getconst_id() )->deleteAll();
+	this->storeManagerAverage->getReadWriteStore(configID)->deleteAll();
 }
 
 }}} // namespace

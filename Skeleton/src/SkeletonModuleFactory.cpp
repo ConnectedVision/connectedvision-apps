@@ -10,11 +10,11 @@ namespace ConnectedVision {
 namespace Module {
 namespace Skeleton {
 
-ConnectedVision::shared_ptr<IConnectedVisionModule> SkeletonModuleFactory::createModule()
+ConnectedVision::shared_ptr<IModule> SkeletonModuleFactory::createModule()
 {
-	ConnectedVision::shared_ptr<ConnectedVision::IConnectedVisionModule> moduleInstance( new SkeletonModule() );
+	ConnectedVision::shared_ptr<IModule> moduleInstance = ConnectedVision::make_shared<SkeletonModule>();
 	if ( !moduleInstance ) 
-		throw std::runtime_error("SkeletonModuleFactory: error creating instance for module: Skeleton Module");
+		throw std::runtime_error("SkeletonModuleFactory: error creating instance for module");
 
 	return moduleInstance;
 }
