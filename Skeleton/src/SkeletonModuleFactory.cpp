@@ -12,7 +12,7 @@ namespace Skeleton {
 
 ConnectedVision::shared_ptr<IModule> SkeletonModuleFactory::createModule()
 {
-	ConnectedVision::shared_ptr<IModule> moduleInstance = ConnectedVision::make_shared<SkeletonModule>();
+	ConnectedVision::shared_ptr<IModule> moduleInstance = boost::dynamic_pointer_cast<IModule>(ConnectedVision::make_shared<SkeletonModule>());
 	if ( !moduleInstance ) 
 		throw std::runtime_error("SkeletonModuleFactory: error creating instance for module");
 
