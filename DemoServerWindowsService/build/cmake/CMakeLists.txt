@@ -16,7 +16,7 @@ endif()
 
 include(${CMAKE_CURRENT_LIST_DIR}/conan.cmake)
 
-set(conanPackageReferences "ConnectedVision/0.0.1@user/stable")
+set(conanPackageReferences "ConnectedVision/2.3.0@user/stable")
 
 if(CRASHRPT)
 	set(conanPackageReferences ${conanPackageReferences} "CrashRpt/1.4.3@user/stable")
