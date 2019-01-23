@@ -16,7 +16,7 @@ endif()
 
 include(${CMAKE_CURRENT_LIST_DIR}/conan.cmake)
 
-set(conanPackageReferences "ConnectedVision/2.3.0@user/stable")
+set(conanPackageReferences "ConnectedVision/2.4.0@user/stable")
 
 if(CRASHRPT)
 	set(conanPackageReferences ${conanPackageReferences} "CrashRpt/1.4.3@user/stable")
@@ -80,18 +80,10 @@ add_executable(${PROJECT_NAME} ${sourceFiles})
 
 set(conanTargets CONAN_PKG::ConnectedVision)
 
-if(CRASHRPT)
-	set(conanTargets ${conanTargets} CONAN_PKG::CrashRpt)
-endif()
-
 target_link_libraries(${PROJECT_NAME}
 	Skeleton
 	${conanTargets}
 )
-
-if(CRASHRPT)
-	set_property(TARGET ${PROJECT_NAME} APPEND PROPERTY LINK_FLAGS "/DEBUG")
-endif()
 
 if(MSVC)
 	# set startup project
@@ -103,20 +95,3 @@ endif()
 
 get_bin_install_directory(dst)
 install(TARGETS ${PROJECT_NAME} DESTINATION ${dst})
-
-if(CRASHRPT)
-	include(${CMAKE_BINARY_DIR}/conanbuildinfo_debug.cmake)
-	include(${CMAKE_BINARY_DIR}/conanbuildinfo_release.cmake)
-
-	install(FILES
-		$<$<CONFIG:Debug>:${CONAN_BIN_DIRS_CRASHRPT_DEBUG}/crashrpt_lang.ini>
-		$<$<CONFIG:Debug>:${CONAN_BIN_DIRS_CRASHRPT_DEBUG}/dbghelp.dll>
-		$<$<CONFIG:Debug>:${CONAN_BIN_DIRS_CRASHRPT_DEBUG}/CrashRpt1403d.dll>
-		$<$<CONFIG:Debug>:${CONAN_BIN_DIRS_CRASHRPT_DEBUG}/CrashSender1403d.exe>
-		$<$<CONFIG:Release>:${CONAN_BIN_DIRS_CRASHRPT_RELEASE}/crashrpt_lang.ini>
-		$<$<CONFIG:Release>:${CONAN_BIN_DIRS_CRASHRPT_RELEASE}/dbghelp.dll>
-		$<$<CONFIG:Release>:${CONAN_BIN_DIRS_CRASHRPT_RELEASE}/CrashRpt1403.dll>
-		$<$<CONFIG:Release>:${CONAN_BIN_DIRS_CRASHRPT_RELEASE}/CrashSender1403.exe>
-		DESTINATION ${dst}
-	)
-endif()

@@ -18,7 +18,7 @@ if(CMAKE_TOOLCHAIN_FILE)
 endif()
 
 # call Conan CMake without targets
-conan_cmake_run(REQUIRES "ConnectedVision/2.3.0@covi/stable" OPTIONS "${conanOptions}" BASIC_SETUP BUILD outdated)
+conan_cmake_run(REQUIRES "ConnectedVision/2.4.0@covi/stable" OPTIONS "${conanOptions}" BASIC_SETUP BUILD outdated)
 
 # function for extracting parameters from conanbuildinfo.cmake file generated as a result of calling conan_cmake_run
 function(get_conan_variable name result)
@@ -33,7 +33,7 @@ get_conan_variable("CONAN_INCLUDE_DIRS_CONNECTEDVISION" includeDir)
 include(${includeDir}/common.cmake)
 
 # call Conan CMake with targets
-conan_cmake_run(REQUIRES "ConnectedVision/2.3.0@covi/stable" OPTIONS "${conanOptions}" BASIC_SETUP CMAKE_TARGETS BUILD outdated)
+conan_cmake_run(REQUIRES "ConnectedVision/2.4.0@covi/stable" OPTIONS "${conanOptions}" BASIC_SETUP CMAKE_TARGETS BUILD outdated)
 
 add_subdirectory(../../../Skeleton/build/cmake Skeleton)
 
