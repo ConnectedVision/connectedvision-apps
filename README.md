@@ -17,8 +17,8 @@
 1. install the [Connected Vision Core](https://github.com/ConnectedVision/connectedvision/blob/master/README.md)
 2. clone the [Connected Vision Apps repository](https://github.com/ConnectedVision/connectedvision-apps) into your working directory
 3. create and change to a temporary working directory
-	- `mkdir $HOME/ConnectedVisionApps/DemoServer/temp`
-	- `cd $HOME/ConnectedVisionApps/DemoServer/temp`
+	- `mkdir $HOME/ConnectedVisionApps/DemoServer/build/temp`
+	- `cd $HOME/ConnectedVisionApps/DemoServer/build/temp`
 4. execute CMake configure:
 	- `cmake ../cmake`
 5. build the project
