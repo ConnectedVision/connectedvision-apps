@@ -5,8 +5,8 @@
 1. install the [Connected Vision Core](https://github.com/ConnectedVision/connectedvision/blob/master/README.md)
 2. clone the [Connected Vision Apps repository](https://github.com/ConnectedVision/connectedvision-apps) into your working directory (e.g. `C:\ConnectedVisionApps`)
 3. create a temporary directory for the Visual Studio solution (**this is a temporary file, the main project file is the CMake file!**), object files and other build artefacts within the `DemoServer\build` directory and switch into it (e.g. `DemoServer\build\temp`).
-	- `mkdir C:\ConnectedVisionApps\DemoServer\temp`
-	- `cd C:\ConnectedVisionApps\DemoServer\temp`
+	- `mkdir C:\ConnectedVisionApps\DemoServer\build\temp`
+	- `cd C:\ConnectedVisionApps\DemoServer\build\temp`
 4. execute CMake configure
 	- `cmake -G "Visual Studio 15 2017 Win64" ..\cmake`
 5. build the `DemoServer.sln` solution using Visual Studio 2017 or from the command line
