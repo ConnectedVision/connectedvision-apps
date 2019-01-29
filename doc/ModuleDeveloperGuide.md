@@ -287,7 +287,7 @@ add_subdirectory(../../../<module-directory>/build/cmake <moduleID>)
 ...
 target_link_libraries(${PROJECT_NAME}
 	Skeleton
-	<module-name>
+	<moduleID>
 	CONAN_PKG::ConnectedVision
 )
 ```
@@ -302,4 +302,4 @@ Add your new module to `DemoServer/src/main.cpp`.
 server.registerModule( <moduleID>::<moduleID>ModuleFactory::createModule() );
 ```
 
-Now you can execute CMake, build and run the Demo Server as described in the [README](../README.md).
+Now you need to execute the **Demo Server CMake**, build and run the created solution for the **Demo Server** as described in the [README](../README.md).
