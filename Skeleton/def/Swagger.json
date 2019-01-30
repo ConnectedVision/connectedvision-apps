@@ -1742,19 +1742,32 @@
 					"description": "URI of module instance",
 					"type": "string"
 				},
+				"commandQueue": {
+					"description": "commands waiting to be executed",
+					"type": "array",
+					"items": {
+						"enum": [
+							"start",
+							"stop",
+							"reset",
+							"recover"
+						],
+						"type": "string"
+					}
+				},
 				"status": {
 					"description": "current status of config / job",
 					"enum": [
 						"n/a",
 						"init",
-						"startup",
+						"starting",
 						"running",
 						"stopping",
 						"stopped",
 						"finished",
 						"error",
-						"reset",
-						"cleanup"
+						"recovering",
+						"resetting"
 					],
 					"type": "string",
 					"default": "n/a"
@@ -1858,6 +1871,7 @@
 			"required": [
 				"moduleID",
 				"moduleURI",
+				"commandQueue",
 				"status",
 				"progress",
 				"startTime",

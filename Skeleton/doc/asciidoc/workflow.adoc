@@ -15,7 +15,7 @@ The `chain` property is an array of chain objects. Each chain object needs to ha
 
 [source,json]
 ----
-include::..\..\..\..\..\..\sample\SyntheticVideo_with_DummyBoundingBoxes.json[]
+include::../../sample/SyntheticVideo_with_DummyBoundingBoxes.json[]
 ----
 
 === Submit

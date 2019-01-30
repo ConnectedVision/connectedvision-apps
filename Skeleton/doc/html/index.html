@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 1.5.3">
+<meta name="generator" content="Asciidoctor 1.5.5">
 <title>Skeleton</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -17,7 +17,6 @@ audio:not([controls]){display:none;height:0}
 [hidden],template{display:none}
 script{display:none!important}
 html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
-body{margin:0}
 a{background:transparent}
 a:focus{outline:thin dotted}
 a:active,a:hover{outline:0}
@@ -52,7 +51,7 @@ textarea{overflow:auto;vertical-align:top}
 table{border-collapse:collapse;border-spacing:0}
 *,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
 html,body{font-size:100%}
-body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;font-weight:400;font-style:normal;line-height:1;position:relative;cursor:auto}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;font-weight:400;font-style:normal;line-height:1;position:relative;cursor:auto;tab-size:4;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
 a:hover{cursor:pointer}
 img,object,embed{max-width:100%;height:auto}
 object,embed{height:100%}
@@ -64,7 +63,6 @@ img{-ms-interpolation-mode:bicubic}
 .text-center{text-align:center!important}
 .text-justify{text-align:justify!important}
 .hide{display:none}
-body{-webkit-font-smoothing:antialiased}
 img,object,svg{display:inline-block;vertical-align:middle}
 textarea{height:auto;min-height:50px}
 select{width:100%}
@@ -119,13 +117,16 @@ table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:
 table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
 table tr.even,table tr.alt,table tr:nth-of-type(even){background:#f8f8f7}
 table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{display:table-cell;line-height:1.6}
-body{tab-size:4}
 h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
 h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
 .clearfix:before,.clearfix:after,.float-group:before,.float-group:after{content:" ";display:table}
 .clearfix:after,.float-group:after{clear:both}
-*:not(pre)>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background-color:#f7f7f8;-webkit-border-radius:4px;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed}
+*:not(pre)>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background-color:#f7f7f8;-webkit-border-radius:4px;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed;word-wrap:break-word}
+*:not(pre)>code.nobreak{word-wrap:normal}
+*:not(pre)>code.nowrap{white-space:nowrap}
 pre,pre>code{line-height:1.45;color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;text-rendering:optimizeSpeed}
+em em{font-style:normal}
+strong strong{font-weight:400}
 .keyseq{color:rgba(51,51,51,.8)}
 kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background-color:#f7f7f7;border:1px solid #ccc;-webkit-border-radius:3px;border-radius:3px;-webkit-box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em white inset;box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em #fff inset;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
 .keyseq kbd:first-child{margin-left:0}
@@ -535,27 +536,27 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 </div>
-<h1 id="_skeleton" class="sect0"><a class="anchor" href="#_skeleton"></a>Skeleton</h1>
+<h1 id="_skeleton" class="sect0"><a class="anchor" href="#_skeleton"></a><a class="link" href="#_skeleton">Skeleton</a></h1>
 <div class="sect1">
-<h2 id="_overview"><a class="anchor" href="#_overview"></a>1. Overview</h2>
+<h2 id="_overview"><a class="anchor" href="#_overview"></a><a class="link" href="#_overview">1. Overview</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>This is the API definition of the Skeleton Module.</p>
 </div>
 <div class="sect2">
-<h3 id="_version_information"><a class="anchor" href="#_version_information"></a>1.1. Version information</h3>
+<h3 id="_version_information"><a class="anchor" href="#_version_information"></a><a class="link" href="#_version_information">1.1. Version information</a></h3>
 <div class="paragraph">
 <p><em>Version</em> : 0.1</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_contact_information"><a class="anchor" href="#_contact_information"></a>1.2. Contact information</h3>
+<h3 id="_contact_information"><a class="anchor" href="#_contact_information"></a><a class="link" href="#_contact_information">1.2. Contact information</a></h3>
 <div class="paragraph">
 <p><em>Contact</em> : <a href="mailto:someone@example.com">someone@example.com</a></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_uri_scheme"><a class="anchor" href="#_uri_scheme"></a>1.3. URI scheme</h3>
+<h3 id="_uri_scheme"><a class="anchor" href="#_uri_scheme"></a><a class="link" href="#_uri_scheme">1.3. URI scheme</a></h3>
 <div class="paragraph">
 <p><em>Host</em> : localhost:2020<br>
 <em>BasePath</em> : /<br>
@@ -563,7 +564,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2">
-<h3 id="_tags"><a class="anchor" href="#_tags"></a>1.4. Tags</h3>
+<h3 id="_tags"><a class="anchor" href="#_tags"></a><a class="link" href="#_tags">1.4. Tags</a></h3>
 <div class="ulist">
 <ul>
 <li>
@@ -584,10 +585,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect1">
-<h2 id="_module_structure"><a class="anchor" href="#_module_structure"></a>2. Module Structure</h2>
+<h2 id="_module_structure"><a class="anchor" href="#_module_structure"></a><a class="link" href="#_module_structure">2. Module Structure</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_configuration"><a class="anchor" href="#_configuration"></a>2.1. Configuration</h3>
+<h3 id="_configuration"><a class="anchor" href="#_configuration"></a><a class="link" href="#_configuration">2.1. Configuration</a></h3>
 <div class="paragraph">
 <p>Depending on the module&#8217;s task or purpose it may be necessary to conduct the same operation based on different parameter sets, using the same parameter set to process different input data or a combination of both. This is the point where configurations come into play. Each parameter set in combination with the input data source is represented by a unique configuration ID.<br>
 This configuration ID is used to control (start, stop, etc.) a configuration and also to query its results.</p>
@@ -605,7 +606,7 @@ Synonymously you could use the words <em>"processing task"</em> or <em>"batch jo
 </table>
 </div>
 <div class="sect3">
-<h4 id="_configuration_id"><a class="anchor" href="#_configuration_id"></a>2.1.1. Configuration ID</h4>
+<h4 id="_configuration_id"><a class="anchor" href="#_configuration_id"></a><a class="link" href="#_configuration_id">2.1.1. Configuration ID</a></h4>
 <div class="paragraph">
 <p>The configuration ID is automatically issued upon the submission of the configuration to the server. The ID is simply the hash of the configuration combined with the input data source specification. Changing any parameter or input source results in a new configuration (ID).<br>
 On the other hand, two independently created configurations using the same parameter set and input will result in the same configuration ID providing an inherent duplication protection and performance optimization.</p>
@@ -624,7 +625,7 @@ If the same parameters on the same inputs (resulting in the same configuration) 
 </div>
 </div>
 <div class="sect3">
-<h4 id="_parameters"><a class="anchor" href="#_parameters"></a>2.1.2. Parameters</h4>
+<h4 id="_parameters"><a class="anchor" href="#_parameters"></a><a class="link" href="#_parameters">2.1.2. Parameters</a></h4>
 <div class="paragraph">
 <p>The configuration parameters are specified as properties of the configuration&#8217;s <code>params</code> sub-object. The available (and/or required) parameters of a module are specified in the module description as <a href="http://json-schema.org/latest/json-schema-core.html">JSON Schema</a>.</p>
 </div>
@@ -659,7 +660,7 @@ If the same parameters on the same inputs (resulting in the same configuration) 
 </div>
 </div>
 <div class="sect2">
-<h3 id="_input"><a class="anchor" href="#_input"></a>2.2. Input</h3>
+<h3 id="_input"><a class="anchor" href="#_input"></a><a class="link" href="#_input">2.2. Input</a></h3>
 <div class="paragraph">
 <p>A module can have an arbitrary number of inputs that are connected to outputs of other modules.<br>
 The connection points of a module are called input pins and output pins, respectively.<br>
@@ -680,7 +681,7 @@ Each input pin is used to request either metadata or binary data. Metadata is st
 </div>
 </div>
 <div class="sect2">
-<h3 id="_output"><a class="anchor" href="#_output"></a>2.3. Output</h3>
+<h3 id="_output"><a class="anchor" href="#_output"></a><a class="link" href="#_output">2.3. Output</a></h3>
 <div class="paragraph">
 <p>Similarly to the <a href="#_input">input</a>, a module can have an arbitrary number of output pins. An output pin provides either metadata or binary data.</p>
 </div>
@@ -691,10 +692,10 @@ Each input pin is used to request either metadata or binary data. Metadata is st
 </div>
 </div>
 <div class="sect1">
-<h2 id="_workflow_example"><a class="anchor" href="#_workflow_example"></a>3. Workflow Example</h2>
+<h2 id="_workflow_example"><a class="anchor" href="#_workflow_example"></a><a class="link" href="#_workflow_example">3. Workflow Example</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_compose"><a class="anchor" href="#_compose"></a>3.1. Compose</h3>
+<h3 id="_compose"><a class="anchor" href="#_compose"></a><a class="link" href="#_compose">3.1. Compose</a></h3>
 <div class="paragraph">
 <p>A configuration is specified in JSON format. A sample configuration for the <em>Skeleton</em> module is shown below.</p>
 </div>
@@ -825,13 +826,13 @@ Each input pin is used to request either metadata or binary data. Metadata is st
 </div>
 </div>
 <div class="sect2">
-<h3 id="_submit"><a class="anchor" href="#_submit"></a>3.2. Submit</h3>
+<h3 id="_submit"><a class="anchor" href="#_submit"></a><a class="link" href="#_submit">3.2. Submit</a></h3>
 <div class="paragraph">
 <p>Once the configuration is composed, it has to be provided to the server using an HTTP <a href="#_setconfig_post">POST</a> request. Upon success, the configuration is returned with some of its properties such as the configuration ID being automatically populated. Submitting a configuration which already exists on the server has no effect.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_reset"><a class="anchor" href="#_reset"></a>3.3. Reset</h3>
+<h3 id="_reset"><a class="anchor" href="#_reset"></a><a class="link" href="#_reset">3.3. Reset</a></h3>
 <div class="paragraph">
 <p>A configuration can be resetted using the <a href="#_configreset">reset</a> request. Possibly existing results are deleted and upon the next start of the configuration it is executed as if it was just submitted to the server for the first time.</p>
 </div>
@@ -849,19 +850,19 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 </div>
 <div class="sect2">
-<h3 id="_start"><a class="anchor" href="#_start"></a>3.4. Start</h3>
+<h3 id="_start"><a class="anchor" href="#_start"></a><a class="link" href="#_start">3.4. Start</a></h3>
 <div class="paragraph">
 <p>A configuration can be started using the <a href="#_configstart">start</a> request. This command initiates the processing of the input data and subsequently provides results at the output pins. If connected predecessor modules are not already running (or finished) they will be started implicitly.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_status"><a class="anchor" href="#_status"></a>3.5. Status</h3>
+<h3 id="_status"><a class="anchor" href="#_status"></a><a class="link" href="#_status">3.5. Status</a></h3>
 <div class="paragraph">
 <p>The current status of a config can be check using the <a href="#_configstatus">status</a> request.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_results"><a class="anchor" href="#_results"></a>3.6. Results</h3>
+<h3 id="_results"><a class="anchor" href="#_results"></a><a class="link" href="#_results">3.6. Results</a></h3>
 <div class="paragraph">
 <p>The results of the <em>Skeleton</em> module can be queried, once the config is started and computed at least a single result element. As mentioned in the <a href="#_output">module structure output</a> section, the result of the <em>Skeleton</em> is simply a color value for each processed frame. Results can be queried by id, index or timestamp. For index and timestamp, also result ranges can be obtained. The various result request types can be found in the <a href="#_outputpin_resource">output pin</a> section.</p>
 </div>
@@ -869,22 +870,22 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 </div>
 <div class="sect1">
-<h2 id="_paths"><a class="anchor" href="#_paths"></a>4. Resources</h2>
+<h2 id="_paths"><a class="anchor" href="#_paths"></a><a class="link" href="#_paths">4. Resources</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_configuration_resource"><a class="anchor" href="#_configuration_resource"></a>4.1. Configuration</h3>
+<h3 id="_configuration_resource"><a class="anchor" href="#_configuration_resource"></a><a class="link" href="#_configuration_resource">4.1. Configuration</a></h3>
 <div class="paragraph">
 <p>Configuration specific things.</p>
 </div>
 <div class="sect3">
-<h4 id="_setconfig_post"><a class="anchor" href="#_setconfig_post"></a>4.1.1. POST /Skeleton/0/config</h4>
+<h4 id="_setconfig_post"><a class="anchor" href="#_setconfig_post"></a><a class="link" href="#_setconfig_post">4.1.1. POST /Skeleton/0/config</a></h4>
 <div class="sect4">
-<h5 id="_parameters_2"><a class="anchor" href="#_parameters_2"></a>Parameters</h5>
+<h5 id="_parameters_2"><a class="anchor" href="#_parameters_2"></a><a class="link" href="#_parameters_2">Parameters</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 22%;">
-<col style="width: 33%;">
-<col style="width: 44%;">
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
 </colgroup>
 <thead>
 <tr>
@@ -904,7 +905,7 @@ A reset also affects all predecessor modules used by this configuration and will
 </table>
 </div>
 <div class="sect4">
-<h5 id="_responses"><a class="anchor" href="#_responses"></a>Responses</h5>
+<h5 id="_responses"><a class="anchor" href="#_responses"></a><a class="link" href="#_responses">Responses</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 10%;">
@@ -938,7 +939,7 @@ A reset also affects all predecessor modules used by this configuration and will
 </table>
 </div>
 <div class="sect4">
-<h5 id="_consumes"><a class="anchor" href="#_consumes"></a>Consumes</h5>
+<h5 id="_consumes"><a class="anchor" href="#_consumes"></a><a class="link" href="#_consumes">Consumes</a></h5>
 <div class="ulist">
 <ul>
 <li>
@@ -948,7 +949,7 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 </div>
 <div class="sect4">
-<h5 id="_produces"><a class="anchor" href="#_produces"></a>Produces</h5>
+<h5 id="_produces"><a class="anchor" href="#_produces"></a><a class="link" href="#_produces">Produces</a></h5>
 <div class="ulist">
 <ul>
 <li>
@@ -959,14 +960,14 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 </div>
 <div class="sect3">
-<h4 id="_setconfig_get"><a class="anchor" href="#_setconfig_get"></a>4.1.2. GET /Skeleton/0/config?payload={config}&amp;cmd=SET</h4>
+<h4 id="_setconfig_get"><a class="anchor" href="#_setconfig_get"></a><a class="link" href="#_setconfig_get">4.1.2. GET /Skeleton/0/config?payload={config}&amp;cmd=SET</a></h4>
 <div class="sect4">
-<h5 id="_parameters_3"><a class="anchor" href="#_parameters_3"></a>Parameters</h5>
+<h5 id="_parameters_3"><a class="anchor" href="#_parameters_3"></a><a class="link" href="#_parameters_3">Parameters</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 22%;">
-<col style="width: 33%;">
-<col style="width: 44%;">
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
 </colgroup>
 <thead>
 <tr>
@@ -980,13 +981,13 @@ A reset also affects all predecessor modules used by this configuration and will
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Path</strong></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>config</strong><br>
 <em>required</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">string(string)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">string (string)</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect4">
-<h5 id="_responses_2"><a class="anchor" href="#_responses_2"></a>Responses</h5>
+<h5 id="_responses_2"><a class="anchor" href="#_responses_2"></a><a class="link" href="#_responses_2">Responses</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 10%;">
@@ -1020,7 +1021,7 @@ A reset also affects all predecessor modules used by this configuration and will
 </table>
 </div>
 <div class="sect4">
-<h5 id="_produces_2"><a class="anchor" href="#_produces_2"></a>Produces</h5>
+<h5 id="_produces_2"><a class="anchor" href="#_produces_2"></a><a class="link" href="#_produces_2">Produces</a></h5>
 <div class="ulist">
 <ul>
 <li>
@@ -1031,14 +1032,14 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 </div>
 <div class="sect3">
-<h4 id="_config"><a class="anchor" href="#_config"></a>4.1.3. GET /Skeleton/{configId}/config</h4>
+<h4 id="_config"><a class="anchor" href="#_config"></a><a class="link" href="#_config">4.1.3. GET /Skeleton/{configId}/config</a></h4>
 <div class="sect4">
-<h5 id="_parameters_4"><a class="anchor" href="#_parameters_4"></a>Parameters</h5>
+<h5 id="_parameters_4"><a class="anchor" href="#_parameters_4"></a><a class="link" href="#_parameters_4">Parameters</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 22%;">
-<col style="width: 33%;">
-<col style="width: 44%;">
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
 </colgroup>
 <thead>
 <tr>
@@ -1052,90 +1053,13 @@ A reset also affects all predecessor modules used by this configuration and will
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Path</strong></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>configId</strong><br>
 <em>required</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">string(string)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">string (string)</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect4">
-<h5 id="_responses_3"><a class="anchor" href="#_responses_3"></a>Responses</h5>
-<table class="tableblock frame-all grid-all spread">
-<colgroup>
-<col style="width: 10%;">
-<col style="width: 70%;">
-<col style="width: 20%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-middle">HTTP Code</th>
-<th class="tableblock halign-left valign-middle">Description</th>
-<th class="tableblock halign-left valign-middle">Schema</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>200</strong></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">successful operation</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="#_skeleton_configuration">Skeleton_Configuration</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>404</strong></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">not found</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="#_error">Error</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>500</strong></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">internal server error</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="#_error">Error</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>default</strong></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Unexpected error</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="#_error">Error</a></p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect4">
-<h5 id="_produces_3"><a class="anchor" href="#_produces_3"></a>Produces</h5>
-<div class="ulist">
-<ul>
-<li>
-<p><code>application/json</code></p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_delete"><a class="anchor" href="#_delete"></a>4.1.4. GET /Skeleton/{configId}/config?cmd=DELETE</h4>
-<div class="sect4">
-<h5 id="_parameters_5"><a class="anchor" href="#_parameters_5"></a>Parameters</h5>
-<table class="tableblock frame-all grid-all spread">
-<colgroup>
-<col style="width: 22%;">
-<col style="width: 33%;">
-<col style="width: 44%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-middle">Type</th>
-<th class="tableblock halign-left valign-middle">Name</th>
-<th class="tableblock halign-left valign-middle">Schema</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Path</strong></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>configId</strong><br>
-<em>required</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">string(string)</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect4">
-<h5 id="_responses_4"><a class="anchor" href="#_responses_4"></a>Responses</h5>
+<h5 id="_responses_3"><a class="anchor" href="#_responses_3"></a><a class="link" href="#_responses_3">Responses</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 10%;">
@@ -1174,7 +1098,7 @@ A reset also affects all predecessor modules used by this configuration and will
 </table>
 </div>
 <div class="sect4">
-<h5 id="_produces_4"><a class="anchor" href="#_produces_4"></a>Produces</h5>
+<h5 id="_produces_3"><a class="anchor" href="#_produces_3"></a><a class="link" href="#_produces_3">Produces</a></h5>
 <div class="ulist">
 <ul>
 <li>
@@ -1185,14 +1109,14 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 </div>
 <div class="sect3">
-<h4 id="_configreset"><a class="anchor" href="#_configreset"></a>4.1.5. GET /Skeleton/{configId}/control/reset</h4>
+<h4 id="_delete"><a class="anchor" href="#_delete"></a><a class="link" href="#_delete">4.1.4. GET /Skeleton/{configId}/config?cmd=DELETE</a></h4>
 <div class="sect4">
-<h5 id="_parameters_6"><a class="anchor" href="#_parameters_6"></a>Parameters</h5>
+<h5 id="_parameters_5"><a class="anchor" href="#_parameters_5"></a><a class="link" href="#_parameters_5">Parameters</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 22%;">
-<col style="width: 33%;">
-<col style="width: 44%;">
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
 </colgroup>
 <thead>
 <tr>
@@ -1206,13 +1130,90 @@ A reset also affects all predecessor modules used by this configuration and will
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Path</strong></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>configId</strong><br>
 <em>required</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">string(string)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">string (string)</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect4">
-<h5 id="_responses_5"><a class="anchor" href="#_responses_5"></a>Responses</h5>
+<h5 id="_responses_4"><a class="anchor" href="#_responses_4"></a><a class="link" href="#_responses_4">Responses</a></h5>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 10%;">
+<col style="width: 70%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">HTTP Code</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>200</strong></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">successful operation</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="#_skeleton_configuration">Skeleton_Configuration</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>404</strong></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">not found</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="#_error">Error</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>500</strong></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">internal server error</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="#_error">Error</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>default</strong></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Unexpected error</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="#_error">Error</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="_produces_4"><a class="anchor" href="#_produces_4"></a><a class="link" href="#_produces_4">Produces</a></h5>
+<div class="ulist">
+<ul>
+<li>
+<p><code>application/json</code></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_configreset"><a class="anchor" href="#_configreset"></a><a class="link" href="#_configreset">4.1.5. GET /Skeleton/{configId}/control/reset</a></h4>
+<div class="sect4">
+<h5 id="_parameters_6"><a class="anchor" href="#_parameters_6"></a><a class="link" href="#_parameters_6">Parameters</a></h5>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">Type</th>
+<th class="tableblock halign-left valign-middle">Name</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Path</strong></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>configId</strong><br>
+<em>required</em></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">string (string)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="_responses_5"><a class="anchor" href="#_responses_5"></a><a class="link" href="#_responses_5">Responses</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 10%;">
@@ -1251,7 +1252,7 @@ A reset also affects all predecessor modules used by this configuration and will
 </table>
 </div>
 <div class="sect4">
-<h5 id="_produces_5"><a class="anchor" href="#_produces_5"></a>Produces</h5>
+<h5 id="_produces_5"><a class="anchor" href="#_produces_5"></a><a class="link" href="#_produces_5">Produces</a></h5>
 <div class="ulist">
 <ul>
 <li>
@@ -1262,14 +1263,14 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 </div>
 <div class="sect3">
-<h4 id="_configresetthis"><a class="anchor" href="#_configresetthis"></a>4.1.6. GET /Skeleton/{configId}/control/resetThis</h4>
+<h4 id="_configresetthis"><a class="anchor" href="#_configresetthis"></a><a class="link" href="#_configresetthis">4.1.6. GET /Skeleton/{configId}/control/resetThis</a></h4>
 <div class="sect4">
-<h5 id="_parameters_7"><a class="anchor" href="#_parameters_7"></a>Parameters</h5>
+<h5 id="_parameters_7"><a class="anchor" href="#_parameters_7"></a><a class="link" href="#_parameters_7">Parameters</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 22%;">
-<col style="width: 33%;">
-<col style="width: 44%;">
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
 </colgroup>
 <thead>
 <tr>
@@ -1283,13 +1284,13 @@ A reset also affects all predecessor modules used by this configuration and will
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Path</strong></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>configId</strong><br>
 <em>required</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">string(string)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">string (string)</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect4">
-<h5 id="_responses_6"><a class="anchor" href="#_responses_6"></a>Responses</h5>
+<h5 id="_responses_6"><a class="anchor" href="#_responses_6"></a><a class="link" href="#_responses_6">Responses</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 10%;">
@@ -1328,7 +1329,7 @@ A reset also affects all predecessor modules used by this configuration and will
 </table>
 </div>
 <div class="sect4">
-<h5 id="_produces_6"><a class="anchor" href="#_produces_6"></a>Produces</h5>
+<h5 id="_produces_6"><a class="anchor" href="#_produces_6"></a><a class="link" href="#_produces_6">Produces</a></h5>
 <div class="ulist">
 <ul>
 <li>
@@ -1339,14 +1340,14 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 </div>
 <div class="sect3">
-<h4 id="_configstart"><a class="anchor" href="#_configstart"></a>4.1.7. GET /Skeleton/{configId}/control/start</h4>
+<h4 id="_configstart"><a class="anchor" href="#_configstart"></a><a class="link" href="#_configstart">4.1.7. GET /Skeleton/{configId}/control/start</a></h4>
 <div class="sect4">
-<h5 id="_parameters_8"><a class="anchor" href="#_parameters_8"></a>Parameters</h5>
+<h5 id="_parameters_8"><a class="anchor" href="#_parameters_8"></a><a class="link" href="#_parameters_8">Parameters</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 22%;">
-<col style="width: 33%;">
-<col style="width: 44%;">
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
 </colgroup>
 <thead>
 <tr>
@@ -1360,13 +1361,13 @@ A reset also affects all predecessor modules used by this configuration and will
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Path</strong></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>configId</strong><br>
 <em>required</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">string(string)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">string (string)</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect4">
-<h5 id="_responses_7"><a class="anchor" href="#_responses_7"></a>Responses</h5>
+<h5 id="_responses_7"><a class="anchor" href="#_responses_7"></a><a class="link" href="#_responses_7">Responses</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 10%;">
@@ -1405,7 +1406,7 @@ A reset also affects all predecessor modules used by this configuration and will
 </table>
 </div>
 <div class="sect4">
-<h5 id="_produces_7"><a class="anchor" href="#_produces_7"></a>Produces</h5>
+<h5 id="_produces_7"><a class="anchor" href="#_produces_7"></a><a class="link" href="#_produces_7">Produces</a></h5>
 <div class="ulist">
 <ul>
 <li>
@@ -1416,14 +1417,14 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 </div>
 <div class="sect3">
-<h4 id="_configstop"><a class="anchor" href="#_configstop"></a>4.1.8. GET /Skeleton/{configId}/control/stop</h4>
+<h4 id="_configstop"><a class="anchor" href="#_configstop"></a><a class="link" href="#_configstop">4.1.8. GET /Skeleton/{configId}/control/stop</a></h4>
 <div class="sect4">
-<h5 id="_parameters_9"><a class="anchor" href="#_parameters_9"></a>Parameters</h5>
+<h5 id="_parameters_9"><a class="anchor" href="#_parameters_9"></a><a class="link" href="#_parameters_9">Parameters</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 22%;">
-<col style="width: 33%;">
-<col style="width: 44%;">
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
 </colgroup>
 <thead>
 <tr>
@@ -1437,13 +1438,13 @@ A reset also affects all predecessor modules used by this configuration and will
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Path</strong></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>configId</strong><br>
 <em>required</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">string(string)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">string (string)</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect4">
-<h5 id="_responses_8"><a class="anchor" href="#_responses_8"></a>Responses</h5>
+<h5 id="_responses_8"><a class="anchor" href="#_responses_8"></a><a class="link" href="#_responses_8">Responses</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 10%;">
@@ -1482,7 +1483,7 @@ A reset also affects all predecessor modules used by this configuration and will
 </table>
 </div>
 <div class="sect4">
-<h5 id="_produces_8"><a class="anchor" href="#_produces_8"></a>Produces</h5>
+<h5 id="_produces_8"><a class="anchor" href="#_produces_8"></a><a class="link" href="#_produces_8">Produces</a></h5>
 <div class="ulist">
 <ul>
 <li>
@@ -1493,14 +1494,14 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 </div>
 <div class="sect3">
-<h4 id="_configstopthis"><a class="anchor" href="#_configstopthis"></a>4.1.9. GET /Skeleton/{configId}/control/stopThis</h4>
+<h4 id="_configstopthis"><a class="anchor" href="#_configstopthis"></a><a class="link" href="#_configstopthis">4.1.9. GET /Skeleton/{configId}/control/stopThis</a></h4>
 <div class="sect4">
-<h5 id="_parameters_10"><a class="anchor" href="#_parameters_10"></a>Parameters</h5>
+<h5 id="_parameters_10"><a class="anchor" href="#_parameters_10"></a><a class="link" href="#_parameters_10">Parameters</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 22%;">
-<col style="width: 33%;">
-<col style="width: 44%;">
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
 </colgroup>
 <thead>
 <tr>
@@ -1514,13 +1515,13 @@ A reset also affects all predecessor modules used by this configuration and will
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Path</strong></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>configId</strong><br>
 <em>required</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">string(string)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">string (string)</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect4">
-<h5 id="_responses_9"><a class="anchor" href="#_responses_9"></a>Responses</h5>
+<h5 id="_responses_9"><a class="anchor" href="#_responses_9"></a><a class="link" href="#_responses_9">Responses</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 10%;">
@@ -1559,7 +1560,7 @@ A reset also affects all predecessor modules used by this configuration and will
 </table>
 </div>
 <div class="sect4">
-<h5 id="_produces_9"><a class="anchor" href="#_produces_9"></a>Produces</h5>
+<h5 id="_produces_9"><a class="anchor" href="#_produces_9"></a><a class="link" href="#_produces_9">Produces</a></h5>
 <div class="ulist">
 <ul>
 <li>
@@ -1570,14 +1571,14 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 </div>
 <div class="sect3">
-<h4 id="_params"><a class="anchor" href="#_params"></a>4.1.10. GET /Skeleton/{configId}/params</h4>
+<h4 id="_params"><a class="anchor" href="#_params"></a><a class="link" href="#_params">4.1.10. GET /Skeleton/{configId}/params</a></h4>
 <div class="sect4">
-<h5 id="_parameters_11"><a class="anchor" href="#_parameters_11"></a>Parameters</h5>
+<h5 id="_parameters_11"><a class="anchor" href="#_parameters_11"></a><a class="link" href="#_parameters_11">Parameters</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 22%;">
-<col style="width: 33%;">
-<col style="width: 44%;">
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
 </colgroup>
 <thead>
 <tr>
@@ -1591,13 +1592,13 @@ A reset also affects all predecessor modules used by this configuration and will
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Path</strong></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>configId</strong><br>
 <em>required</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">string(string)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">string (string)</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect4">
-<h5 id="_responses_10"><a class="anchor" href="#_responses_10"></a>Responses</h5>
+<h5 id="_responses_10"><a class="anchor" href="#_responses_10"></a><a class="link" href="#_responses_10">Responses</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 10%;">
@@ -1636,7 +1637,7 @@ A reset also affects all predecessor modules used by this configuration and will
 </table>
 </div>
 <div class="sect4">
-<h5 id="_produces_10"><a class="anchor" href="#_produces_10"></a>Produces</h5>
+<h5 id="_produces_10"><a class="anchor" href="#_produces_10"></a><a class="link" href="#_produces_10">Produces</a></h5>
 <div class="ulist">
 <ul>
 <li>
@@ -1647,14 +1648,14 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 </div>
 <div class="sect3">
-<h4 id="_configstatus"><a class="anchor" href="#_configstatus"></a>4.1.11. GET /Skeleton/{configId}/status</h4>
+<h4 id="_configstatus"><a class="anchor" href="#_configstatus"></a><a class="link" href="#_configstatus">4.1.11. GET /Skeleton/{configId}/status</a></h4>
 <div class="sect4">
-<h5 id="_parameters_12"><a class="anchor" href="#_parameters_12"></a>Parameters</h5>
+<h5 id="_parameters_12"><a class="anchor" href="#_parameters_12"></a><a class="link" href="#_parameters_12">Parameters</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 22%;">
-<col style="width: 33%;">
-<col style="width: 44%;">
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
 </colgroup>
 <thead>
 <tr>
@@ -1668,13 +1669,13 @@ A reset also affects all predecessor modules used by this configuration and will
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Path</strong></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>configId</strong><br>
 <em>required</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">string(string)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">string (string)</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect4">
-<h5 id="_responses_11"><a class="anchor" href="#_responses_11"></a>Responses</h5>
+<h5 id="_responses_11"><a class="anchor" href="#_responses_11"></a><a class="link" href="#_responses_11">Responses</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 10%;">
@@ -1713,7 +1714,7 @@ A reset also affects all predecessor modules used by this configuration and will
 </table>
 </div>
 <div class="sect4">
-<h5 id="_produces_11"><a class="anchor" href="#_produces_11"></a>Produces</h5>
+<h5 id="_produces_11"><a class="anchor" href="#_produces_11"></a><a class="link" href="#_produces_11">Produces</a></h5>
 <div class="ulist">
 <ul>
 <li>
@@ -1725,14 +1726,14 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 </div>
 <div class="sect2">
-<h3 id="_host_resource"><a class="anchor" href="#_host_resource"></a>4.2. Host</h3>
+<h3 id="_host_resource"><a class="anchor" href="#_host_resource"></a><a class="link" href="#_host_resource">4.2. Host</a></h3>
 <div class="paragraph">
 <p>Host specific things.</p>
 </div>
 <div class="sect3">
-<h4 id="_hoststatus"><a class="anchor" href="#_hoststatus"></a>4.2.1. GET /<em>hostStatus</em></h4>
+<h4 id="_hoststatus"><a class="anchor" href="#_hoststatus"></a><a class="link" href="#_hoststatus">4.2.1. GET /<em>hostStatus</em></a></h4>
 <div class="sect4">
-<h5 id="_responses_12"><a class="anchor" href="#_responses_12"></a>Responses</h5>
+<h5 id="_responses_12"><a class="anchor" href="#_responses_12"></a><a class="link" href="#_responses_12">Responses</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 10%;">
@@ -1761,7 +1762,7 @@ A reset also affects all predecessor modules used by this configuration and will
 </table>
 </div>
 <div class="sect4">
-<h5 id="_produces_12"><a class="anchor" href="#_produces_12"></a>Produces</h5>
+<h5 id="_produces_12"><a class="anchor" href="#_produces_12"></a><a class="link" href="#_produces_12">Produces</a></h5>
 <div class="ulist">
 <ul>
 <li>
@@ -1773,14 +1774,14 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 </div>
 <div class="sect2">
-<h3 id="_module_resource"><a class="anchor" href="#_module_resource"></a>4.3. Module</h3>
+<h3 id="_module_resource"><a class="anchor" href="#_module_resource"></a><a class="link" href="#_module_resource">4.3. Module</a></h3>
 <div class="paragraph">
 <p>Module specific things.</p>
 </div>
 <div class="sect3">
-<h4 id="_configlist"><a class="anchor" href="#_configlist"></a>4.3.1. GET /Skeleton/configList</h4>
+<h4 id="_configlist"><a class="anchor" href="#_configlist"></a><a class="link" href="#_configlist">4.3.1. GET /Skeleton/configList</a></h4>
 <div class="sect4">
-<h5 id="_responses_13"><a class="anchor" href="#_responses_13"></a>Responses</h5>
+<h5 id="_responses_13"><a class="anchor" href="#_responses_13"></a><a class="link" href="#_responses_13">Responses</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 10%;">
@@ -1809,7 +1810,7 @@ A reset also affects all predecessor modules used by this configuration and will
 </table>
 </div>
 <div class="sect4">
-<h5 id="_produces_13"><a class="anchor" href="#_produces_13"></a>Produces</h5>
+<h5 id="_produces_13"><a class="anchor" href="#_produces_13"></a><a class="link" href="#_produces_13">Produces</a></h5>
 <div class="ulist">
 <ul>
 <li>
@@ -1820,9 +1821,9 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 </div>
 <div class="sect3">
-<h4 id="_configlistdetailed"><a class="anchor" href="#_configlistdetailed"></a>4.3.2. GET /Skeleton/configListDetailed</h4>
+<h4 id="_configlistdetailed"><a class="anchor" href="#_configlistdetailed"></a><a class="link" href="#_configlistdetailed">4.3.2. GET /Skeleton/configListDetailed</a></h4>
 <div class="sect4">
-<h5 id="_responses_14"><a class="anchor" href="#_responses_14"></a>Responses</h5>
+<h5 id="_responses_14"><a class="anchor" href="#_responses_14"></a><a class="link" href="#_responses_14">Responses</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 10%;">
@@ -1854,9 +1855,9 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 16%;">
-<col style="width: 61%;">
-<col style="width: 22%;">
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
 </colgroup>
 <thead>
 <tr>
@@ -1897,9 +1898,9 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 16%;">
-<col style="width: 61%;">
-<col style="width: 22%;">
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
 </colgroup>
 <thead>
 <tr>
@@ -1928,8 +1929,8 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 42%;">
-<col style="width: 57%;">
+<col style="width: 42.8571%;">
+<col style="width: 57.1429%;">
 </colgroup>
 <thead>
 <tr>
@@ -1977,7 +1978,7 @@ A reset also affects all predecessor modules used by this configuration and will
 </table>
 </div>
 <div class="sect4">
-<h5 id="_produces_14"><a class="anchor" href="#_produces_14"></a>Produces</h5>
+<h5 id="_produces_14"><a class="anchor" href="#_produces_14"></a><a class="link" href="#_produces_14">Produces</a></h5>
 <div class="ulist">
 <ul>
 <li>
@@ -1988,9 +1989,9 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 </div>
 <div class="sect3">
-<h4 id="_init"><a class="anchor" href="#_init"></a>4.3.3. GET /Skeleton/init</h4>
+<h4 id="_init"><a class="anchor" href="#_init"></a><a class="link" href="#_init">4.3.3. GET /Skeleton/init</a></h4>
 <div class="sect4">
-<h5 id="_responses_15"><a class="anchor" href="#_responses_15"></a>Responses</h5>
+<h5 id="_responses_15"><a class="anchor" href="#_responses_15"></a><a class="link" href="#_responses_15">Responses</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 10%;">
@@ -2019,7 +2020,7 @@ A reset also affects all predecessor modules used by this configuration and will
 </table>
 </div>
 <div class="sect4">
-<h5 id="_produces_15"><a class="anchor" href="#_produces_15"></a>Produces</h5>
+<h5 id="_produces_15"><a class="anchor" href="#_produces_15"></a><a class="link" href="#_produces_15">Produces</a></h5>
 <div class="ulist">
 <ul>
 <li>
@@ -2030,9 +2031,9 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 </div>
 <div class="sect3">
-<h4 id="_inputdescription"><a class="anchor" href="#_inputdescription"></a>4.3.4. GET /Skeleton/inputDescription</h4>
+<h4 id="_inputdescription"><a class="anchor" href="#_inputdescription"></a><a class="link" href="#_inputdescription">4.3.4. GET /Skeleton/inputDescription</a></h4>
 <div class="sect4">
-<h5 id="_responses_16"><a class="anchor" href="#_responses_16"></a>Responses</h5>
+<h5 id="_responses_16"><a class="anchor" href="#_responses_16"></a><a class="link" href="#_responses_16">Responses</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 10%;">
@@ -2061,7 +2062,7 @@ A reset also affects all predecessor modules used by this configuration and will
 </table>
 </div>
 <div class="sect4">
-<h5 id="_produces_16"><a class="anchor" href="#_produces_16"></a>Produces</h5>
+<h5 id="_produces_16"><a class="anchor" href="#_produces_16"></a><a class="link" href="#_produces_16">Produces</a></h5>
 <div class="ulist">
 <ul>
 <li>
@@ -2072,9 +2073,9 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 </div>
 <div class="sect3">
-<h4 id="_moduledescription"><a class="anchor" href="#_moduledescription"></a>4.3.5. GET /Skeleton/moduleDescription</h4>
+<h4 id="_moduledescription"><a class="anchor" href="#_moduledescription"></a><a class="link" href="#_moduledescription">4.3.5. GET /Skeleton/moduleDescription</a></h4>
 <div class="sect4">
-<h5 id="_responses_17"><a class="anchor" href="#_responses_17"></a>Responses</h5>
+<h5 id="_responses_17"><a class="anchor" href="#_responses_17"></a><a class="link" href="#_responses_17">Responses</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 10%;">
@@ -2103,7 +2104,7 @@ A reset also affects all predecessor modules used by this configuration and will
 </table>
 </div>
 <div class="sect4">
-<h5 id="_produces_17"><a class="anchor" href="#_produces_17"></a>Produces</h5>
+<h5 id="_produces_17"><a class="anchor" href="#_produces_17"></a><a class="link" href="#_produces_17">Produces</a></h5>
 <div class="ulist">
 <ul>
 <li>
@@ -2114,9 +2115,9 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 </div>
 <div class="sect3">
-<h4 id="_outputdescription"><a class="anchor" href="#_outputdescription"></a>4.3.6. GET /Skeleton/outputDescription</h4>
+<h4 id="_outputdescription"><a class="anchor" href="#_outputdescription"></a><a class="link" href="#_outputdescription">4.3.6. GET /Skeleton/outputDescription</a></h4>
 <div class="sect4">
-<h5 id="_responses_18"><a class="anchor" href="#_responses_18"></a>Responses</h5>
+<h5 id="_responses_18"><a class="anchor" href="#_responses_18"></a><a class="link" href="#_responses_18">Responses</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 10%;">
@@ -2145,7 +2146,7 @@ A reset also affects all predecessor modules used by this configuration and will
 </table>
 </div>
 <div class="sect4">
-<h5 id="_produces_18"><a class="anchor" href="#_produces_18"></a>Produces</h5>
+<h5 id="_produces_18"><a class="anchor" href="#_produces_18"></a><a class="link" href="#_produces_18">Produces</a></h5>
 <div class="ulist">
 <ul>
 <li>
@@ -2156,9 +2157,9 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 </div>
 <div class="sect3">
-<h4 id="_release"><a class="anchor" href="#_release"></a>4.3.7. GET /Skeleton/release</h4>
+<h4 id="_release"><a class="anchor" href="#_release"></a><a class="link" href="#_release">4.3.7. GET /Skeleton/release</a></h4>
 <div class="sect4">
-<h5 id="_responses_19"><a class="anchor" href="#_responses_19"></a>Responses</h5>
+<h5 id="_responses_19"><a class="anchor" href="#_responses_19"></a><a class="link" href="#_responses_19">Responses</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 10%;">
@@ -2187,7 +2188,7 @@ A reset also affects all predecessor modules used by this configuration and will
 </table>
 </div>
 <div class="sect4">
-<h5 id="_produces_19"><a class="anchor" href="#_produces_19"></a>Produces</h5>
+<h5 id="_produces_19"><a class="anchor" href="#_produces_19"></a><a class="link" href="#_produces_19">Produces</a></h5>
 <div class="ulist">
 <ul>
 <li>
@@ -2198,9 +2199,9 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 </div>
 <div class="sect3">
-<h4 id="_status"><a class="anchor" href="#_status"></a>4.3.8. GET /Skeleton/status</h4>
+<h4 id="_status"><a class="anchor" href="#_status"></a><a class="link" href="#_status">4.3.8. GET /Skeleton/status</a></h4>
 <div class="sect4">
-<h5 id="_responses_20"><a class="anchor" href="#_responses_20"></a>Responses</h5>
+<h5 id="_responses_20"><a class="anchor" href="#_responses_20"></a><a class="link" href="#_responses_20">Responses</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 10%;">
@@ -2229,7 +2230,7 @@ A reset also affects all predecessor modules used by this configuration and will
 </table>
 </div>
 <div class="sect4">
-<h5 id="_produces_20"><a class="anchor" href="#_produces_20"></a>Produces</h5>
+<h5 id="_produces_20"><a class="anchor" href="#_produces_20"></a><a class="link" href="#_produces_20">Produces</a></h5>
 <div class="ulist">
 <ul>
 <li>
@@ -2241,19 +2242,19 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 </div>
 <div class="sect2">
-<h3 id="_outputpin_resource"><a class="anchor" href="#_outputpin_resource"></a>4.4. OutputPin</h3>
+<h3 id="_outputpin_resource"><a class="anchor" href="#_outputpin_resource"></a><a class="link" href="#_outputpin_resource">4.4. OutputPin</a></h3>
 <div class="paragraph">
 <p>OutputPin specific things.</p>
 </div>
 <div class="sect3">
-<h4 id="_get_skeleton_outputpin_average_byaftertime"><a class="anchor" href="#_get_skeleton_outputpin_average_byaftertime"></a>4.4.1. GET /Skeleton/{configId}/Average/aftertime/{time}</h4>
+<h4 id="_get_skeleton_outputpin_average_byaftertime"><a class="anchor" href="#_get_skeleton_outputpin_average_byaftertime"></a><a class="link" href="#_get_skeleton_outputpin_average_byaftertime">4.4.1. GET /Skeleton/{configId}/Average/aftertime/{time}</a></h4>
 <div class="sect4">
-<h5 id="_parameters_13"><a class="anchor" href="#_parameters_13"></a>Parameters</h5>
+<h5 id="_parameters_13"><a class="anchor" href="#_parameters_13"></a><a class="link" href="#_parameters_13">Parameters</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 22%;">
-<col style="width: 33%;">
-<col style="width: 44%;">
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
 </colgroup>
 <thead>
 <tr>
@@ -2267,19 +2268,19 @@ A reset also affects all predecessor modules used by this configuration and will
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Path</strong></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>configId</strong><br>
 <em>required</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">string(string)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">string (string)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Path</strong></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>time</strong><br>
 <em>required</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">integer(int64)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">integer (int64)</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect4">
-<h5 id="_responses_21"><a class="anchor" href="#_responses_21"></a>Responses</h5>
+<h5 id="_responses_21"><a class="anchor" href="#_responses_21"></a><a class="link" href="#_responses_21">Responses</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 10%;">
@@ -2318,7 +2319,7 @@ A reset also affects all predecessor modules used by this configuration and will
 </table>
 </div>
 <div class="sect4">
-<h5 id="_produces_21"><a class="anchor" href="#_produces_21"></a>Produces</h5>
+<h5 id="_produces_21"><a class="anchor" href="#_produces_21"></a><a class="link" href="#_produces_21">Produces</a></h5>
 <div class="ulist">
 <ul>
 <li>
@@ -2329,14 +2330,14 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 </div>
 <div class="sect3">
-<h4 id="_get_skeleton_outputpin_average_bybeforetime"><a class="anchor" href="#_get_skeleton_outputpin_average_bybeforetime"></a>4.4.2. GET /Skeleton/{configId}/Average/beforetime/{time}</h4>
+<h4 id="_get_skeleton_outputpin_average_bybeforetime"><a class="anchor" href="#_get_skeleton_outputpin_average_bybeforetime"></a><a class="link" href="#_get_skeleton_outputpin_average_bybeforetime">4.4.2. GET /Skeleton/{configId}/Average/beforetime/{time}</a></h4>
 <div class="sect4">
-<h5 id="_parameters_14"><a class="anchor" href="#_parameters_14"></a>Parameters</h5>
+<h5 id="_parameters_14"><a class="anchor" href="#_parameters_14"></a><a class="link" href="#_parameters_14">Parameters</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 22%;">
-<col style="width: 33%;">
-<col style="width: 44%;">
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
 </colgroup>
 <thead>
 <tr>
@@ -2350,19 +2351,19 @@ A reset also affects all predecessor modules used by this configuration and will
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Path</strong></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>configId</strong><br>
 <em>required</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">string(string)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">string (string)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Path</strong></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>time</strong><br>
 <em>required</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">integer(int64)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">integer (int64)</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect4">
-<h5 id="_responses_22"><a class="anchor" href="#_responses_22"></a>Responses</h5>
+<h5 id="_responses_22"><a class="anchor" href="#_responses_22"></a><a class="link" href="#_responses_22">Responses</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 10%;">
@@ -2401,7 +2402,7 @@ A reset also affects all predecessor modules used by this configuration and will
 </table>
 </div>
 <div class="sect4">
-<h5 id="_produces_22"><a class="anchor" href="#_produces_22"></a>Produces</h5>
+<h5 id="_produces_22"><a class="anchor" href="#_produces_22"></a><a class="link" href="#_produces_22">Produces</a></h5>
 <div class="ulist">
 <ul>
 <li>
@@ -2412,14 +2413,14 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 </div>
 <div class="sect3">
-<h4 id="_get_skeleton_outputpin_average_byid"><a class="anchor" href="#_get_skeleton_outputpin_average_byid"></a>4.4.3. GET /Skeleton/{configId}/Average/id/{id}</h4>
+<h4 id="_get_skeleton_outputpin_average_byid"><a class="anchor" href="#_get_skeleton_outputpin_average_byid"></a><a class="link" href="#_get_skeleton_outputpin_average_byid">4.4.3. GET /Skeleton/{configId}/Average/id/{id}</a></h4>
 <div class="sect4">
-<h5 id="_parameters_15"><a class="anchor" href="#_parameters_15"></a>Parameters</h5>
+<h5 id="_parameters_15"><a class="anchor" href="#_parameters_15"></a><a class="link" href="#_parameters_15">Parameters</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 22%;">
-<col style="width: 33%;">
-<col style="width: 44%;">
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
 </colgroup>
 <thead>
 <tr>
@@ -2433,19 +2434,19 @@ A reset also affects all predecessor modules used by this configuration and will
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Path</strong></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>configId</strong><br>
 <em>required</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">string(string)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">string (string)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Path</strong></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>id</strong><br>
 <em>required</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">integer(int64)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">integer (int64)</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect4">
-<h5 id="_responses_23"><a class="anchor" href="#_responses_23"></a>Responses</h5>
+<h5 id="_responses_23"><a class="anchor" href="#_responses_23"></a><a class="link" href="#_responses_23">Responses</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 10%;">
@@ -2484,7 +2485,7 @@ A reset also affects all predecessor modules used by this configuration and will
 </table>
 </div>
 <div class="sect4">
-<h5 id="_produces_23"><a class="anchor" href="#_produces_23"></a>Produces</h5>
+<h5 id="_produces_23"><a class="anchor" href="#_produces_23"></a><a class="link" href="#_produces_23">Produces</a></h5>
 <div class="ulist">
 <ul>
 <li>
@@ -2495,14 +2496,14 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 </div>
 <div class="sect3">
-<h4 id="_get_skeleton_outputpin_average_byindex"><a class="anchor" href="#_get_skeleton_outputpin_average_byindex"></a>4.4.4. GET /Skeleton/{configId}/Average/index/{index}</h4>
+<h4 id="_get_skeleton_outputpin_average_byindex"><a class="anchor" href="#_get_skeleton_outputpin_average_byindex"></a><a class="link" href="#_get_skeleton_outputpin_average_byindex">4.4.4. GET /Skeleton/{configId}/Average/index/{index}</a></h4>
 <div class="sect4">
-<h5 id="_parameters_16"><a class="anchor" href="#_parameters_16"></a>Parameters</h5>
+<h5 id="_parameters_16"><a class="anchor" href="#_parameters_16"></a><a class="link" href="#_parameters_16">Parameters</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 22%;">
-<col style="width: 33%;">
-<col style="width: 44%;">
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
 </colgroup>
 <thead>
 <tr>
@@ -2516,19 +2517,19 @@ A reset also affects all predecessor modules used by this configuration and will
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Path</strong></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>configId</strong><br>
 <em>required</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">string(string)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">string (string)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Path</strong></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>index</strong><br>
 <em>required</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">integer(int64)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">integer (int64)</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect4">
-<h5 id="_responses_24"><a class="anchor" href="#_responses_24"></a>Responses</h5>
+<h5 id="_responses_24"><a class="anchor" href="#_responses_24"></a><a class="link" href="#_responses_24">Responses</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 10%;">
@@ -2567,7 +2568,7 @@ A reset also affects all predecessor modules used by this configuration and will
 </table>
 </div>
 <div class="sect4">
-<h5 id="_produces_24"><a class="anchor" href="#_produces_24"></a>Produces</h5>
+<h5 id="_produces_24"><a class="anchor" href="#_produces_24"></a><a class="link" href="#_produces_24">Produces</a></h5>
 <div class="ulist">
 <ul>
 <li>
@@ -2578,14 +2579,14 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 </div>
 <div class="sect3">
-<h4 id="_get_skeleton_outputpin_average_byindexrange"><a class="anchor" href="#_get_skeleton_outputpin_average_byindexrange"></a>4.4.5. GET /Skeleton/{configId}/Average/index/{startIndex}/{endIndex}</h4>
+<h4 id="_get_skeleton_outputpin_average_byindexrange"><a class="anchor" href="#_get_skeleton_outputpin_average_byindexrange"></a><a class="link" href="#_get_skeleton_outputpin_average_byindexrange">4.4.5. GET /Skeleton/{configId}/Average/index/{startIndex}/{endIndex}</a></h4>
 <div class="sect4">
-<h5 id="_parameters_17"><a class="anchor" href="#_parameters_17"></a>Parameters</h5>
+<h5 id="_parameters_17"><a class="anchor" href="#_parameters_17"></a><a class="link" href="#_parameters_17">Parameters</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 22%;">
-<col style="width: 33%;">
-<col style="width: 44%;">
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
 </colgroup>
 <thead>
 <tr>
@@ -2599,25 +2600,25 @@ A reset also affects all predecessor modules used by this configuration and will
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Path</strong></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>configId</strong><br>
 <em>required</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">string(string)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">string (string)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Path</strong></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>endIndex</strong><br>
 <em>required</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">integer(int64)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">integer (int64)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Path</strong></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>startIndex</strong><br>
 <em>required</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">integer(int64)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">integer (int64)</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect4">
-<h5 id="_responses_25"><a class="anchor" href="#_responses_25"></a>Responses</h5>
+<h5 id="_responses_25"><a class="anchor" href="#_responses_25"></a><a class="link" href="#_responses_25">Responses</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 10%;">
@@ -2656,7 +2657,7 @@ A reset also affects all predecessor modules used by this configuration and will
 </table>
 </div>
 <div class="sect4">
-<h5 id="_produces_25"><a class="anchor" href="#_produces_25"></a>Produces</h5>
+<h5 id="_produces_25"><a class="anchor" href="#_produces_25"></a><a class="link" href="#_produces_25">Produces</a></h5>
 <div class="ulist">
 <ul>
 <li>
@@ -2667,14 +2668,14 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 </div>
 <div class="sect3">
-<h4 id="_get_skeleton_outputpin_average_newest"><a class="anchor" href="#_get_skeleton_outputpin_average_newest"></a>4.4.6. GET /Skeleton/{configId}/Average/newest</h4>
+<h4 id="_get_skeleton_outputpin_average_newest"><a class="anchor" href="#_get_skeleton_outputpin_average_newest"></a><a class="link" href="#_get_skeleton_outputpin_average_newest">4.4.6. GET /Skeleton/{configId}/Average/newest</a></h4>
 <div class="sect4">
-<h5 id="_parameters_18"><a class="anchor" href="#_parameters_18"></a>Parameters</h5>
+<h5 id="_parameters_18"><a class="anchor" href="#_parameters_18"></a><a class="link" href="#_parameters_18">Parameters</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 22%;">
-<col style="width: 33%;">
-<col style="width: 44%;">
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
 </colgroup>
 <thead>
 <tr>
@@ -2688,13 +2689,13 @@ A reset also affects all predecessor modules used by this configuration and will
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Path</strong></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>configId</strong><br>
 <em>required</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">string(string)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">string (string)</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect4">
-<h5 id="_responses_26"><a class="anchor" href="#_responses_26"></a>Responses</h5>
+<h5 id="_responses_26"><a class="anchor" href="#_responses_26"></a><a class="link" href="#_responses_26">Responses</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 10%;">
@@ -2733,7 +2734,7 @@ A reset also affects all predecessor modules used by this configuration and will
 </table>
 </div>
 <div class="sect4">
-<h5 id="_produces_26"><a class="anchor" href="#_produces_26"></a>Produces</h5>
+<h5 id="_produces_26"><a class="anchor" href="#_produces_26"></a><a class="link" href="#_produces_26">Produces</a></h5>
 <div class="ulist">
 <ul>
 <li>
@@ -2744,14 +2745,14 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 </div>
 <div class="sect3">
-<h4 id="_get_skeleton_outputpin_average_bytimerange"><a class="anchor" href="#_get_skeleton_outputpin_average_bytimerange"></a>4.4.7. GET /Skeleton/{configId}/Average/time/{startTime}/{endTime}</h4>
+<h4 id="_get_skeleton_outputpin_average_bytimerange"><a class="anchor" href="#_get_skeleton_outputpin_average_bytimerange"></a><a class="link" href="#_get_skeleton_outputpin_average_bytimerange">4.4.7. GET /Skeleton/{configId}/Average/time/{startTime}/{endTime}</a></h4>
 <div class="sect4">
-<h5 id="_parameters_19"><a class="anchor" href="#_parameters_19"></a>Parameters</h5>
+<h5 id="_parameters_19"><a class="anchor" href="#_parameters_19"></a><a class="link" href="#_parameters_19">Parameters</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 22%;">
-<col style="width: 33%;">
-<col style="width: 44%;">
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
 </colgroup>
 <thead>
 <tr>
@@ -2765,25 +2766,25 @@ A reset also affects all predecessor modules used by this configuration and will
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Path</strong></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>configId</strong><br>
 <em>required</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">string(string)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">string (string)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Path</strong></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>endTime</strong><br>
 <em>required</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">integer(int64)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">integer (int64)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Path</strong></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>startTime</strong><br>
 <em>required</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">integer(int64)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">integer (int64)</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect4">
-<h5 id="_responses_27"><a class="anchor" href="#_responses_27"></a>Responses</h5>
+<h5 id="_responses_27"><a class="anchor" href="#_responses_27"></a><a class="link" href="#_responses_27">Responses</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 10%;">
@@ -2822,7 +2823,7 @@ A reset also affects all predecessor modules used by this configuration and will
 </table>
 </div>
 <div class="sect4">
-<h5 id="_produces_27"><a class="anchor" href="#_produces_27"></a>Produces</h5>
+<h5 id="_produces_27"><a class="anchor" href="#_produces_27"></a><a class="link" href="#_produces_27">Produces</a></h5>
 <div class="ulist">
 <ul>
 <li>
@@ -2833,14 +2834,14 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 </div>
 <div class="sect3">
-<h4 id="_get_skeleton_outputpin_average_bytime"><a class="anchor" href="#_get_skeleton_outputpin_average_bytime"></a>4.4.8. GET /Skeleton/{configId}/Average/time/{time}</h4>
+<h4 id="_get_skeleton_outputpin_average_bytime"><a class="anchor" href="#_get_skeleton_outputpin_average_bytime"></a><a class="link" href="#_get_skeleton_outputpin_average_bytime">4.4.8. GET /Skeleton/{configId}/Average/time/{time}</a></h4>
 <div class="sect4">
-<h5 id="_parameters_20"><a class="anchor" href="#_parameters_20"></a>Parameters</h5>
+<h5 id="_parameters_20"><a class="anchor" href="#_parameters_20"></a><a class="link" href="#_parameters_20">Parameters</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 22%;">
-<col style="width: 33%;">
-<col style="width: 44%;">
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
 </colgroup>
 <thead>
 <tr>
@@ -2854,19 +2855,19 @@ A reset also affects all predecessor modules used by this configuration and will
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Path</strong></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>configId</strong><br>
 <em>required</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">string(string)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">string (string)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Path</strong></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>time</strong><br>
 <em>required</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">integer(int64)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">integer (int64)</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect4">
-<h5 id="_responses_28"><a class="anchor" href="#_responses_28"></a>Responses</h5>
+<h5 id="_responses_28"><a class="anchor" href="#_responses_28"></a><a class="link" href="#_responses_28">Responses</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 10%;">
@@ -2905,7 +2906,7 @@ A reset also affects all predecessor modules used by this configuration and will
 </table>
 </div>
 <div class="sect4">
-<h5 id="_produces_28"><a class="anchor" href="#_produces_28"></a>Produces</h5>
+<h5 id="_produces_28"><a class="anchor" href="#_produces_28"></a><a class="link" href="#_produces_28">Produces</a></h5>
 <div class="ulist">
 <ul>
 <li>
@@ -2919,14 +2920,14 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 </div>
 <div class="sect1">
-<h2 id="_definitions"><a class="anchor" href="#_definitions"></a>5. Definitions</h2>
+<h2 id="_definitions"><a class="anchor" href="#_definitions"></a><a class="link" href="#_definitions">5. Definitions</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_error"><a class="anchor" href="#_error"></a>5.1. Error</h3>
+<h3 id="_error"><a class="anchor" href="#_error"></a><a class="link" href="#_error">5.1. Error</a></h3>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 42%;">
-<col style="width: 57%;">
+<col style="width: 42.8571%;">
+<col style="width: 57.1429%;">
 </colgroup>
 <thead>
 <tr>
@@ -2949,15 +2950,15 @@ A reset also affects all predecessor modules used by this configuration and will
 </table>
 </div>
 <div class="sect2">
-<h3 id="_hoststatus"><a class="anchor" href="#_hoststatus"></a>5.2. HostStatus</h3>
+<h3 id="_hoststatus"><a class="anchor" href="#_hoststatus"></a><a class="link" href="#_hoststatus">5.2. HostStatus</a></h3>
 <div class="paragraph">
 <p>host status</p>
 </div>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 16%;">
-<col style="width: 61%;">
-<col style="width: 22%;">
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
 </colgroup>
 <thead>
 <tr>
@@ -2983,15 +2984,15 @@ A reset also affects all predecessor modules used by this configuration and will
 </table>
 </div>
 <div class="sect2">
-<h3 id="_skeleton_configuration"><a class="anchor" href="#_skeleton_configuration"></a>5.3. Skeleton_Configuration</h3>
+<h3 id="_skeleton_configuration"><a class="anchor" href="#_skeleton_configuration"></a><a class="link" href="#_skeleton_configuration">5.3. Skeleton_Configuration</a></h3>
 <div class="paragraph">
 <p>config chain</p>
 </div>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 16%;">
-<col style="width: 61%;">
-<col style="width: 22%;">
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
 </colgroup>
 <thead>
 <tr>
@@ -3060,13 +3061,13 @@ A reset also affects all predecessor modules used by this configuration and will
 <em>optional</em></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">time of modification<br>
 <strong>Default</strong> : <code>0</code></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">integer(int64)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">integer (int64)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>version</strong><br>
 <em>required</em></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">config version</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">integer(int64)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">integer (int64)</p></td>
 </tr>
 </tbody>
 </table>
@@ -3075,9 +3076,9 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 16%;">
-<col style="width: 61%;">
-<col style="width: 22%;">
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
 </colgroup>
 <thead>
 <tr>
@@ -3091,7 +3092,7 @@ A reset also affects all predecessor modules used by this configuration and will
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>timestamp</strong><br>
 <em>optional</em></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">creation timestamp of aliasID for this config</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">integer(int64)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">integer (int64)</p></td>
 </tr>
 </tbody>
 </table>
@@ -3100,9 +3101,9 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 16%;">
-<col style="width: 61%;">
-<col style="width: 22%;">
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
 </colgroup>
 <thead>
 <tr>
@@ -3131,9 +3132,9 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 16%;">
-<col style="width: 61%;">
-<col style="width: 22%;">
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
 </colgroup>
 <thead>
 <tr>
@@ -3162,9 +3163,9 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 16%;">
-<col style="width: 61%;">
-<col style="width: 22%;">
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
 </colgroup>
 <thead>
 <tr>
@@ -3193,9 +3194,9 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 16%;">
-<col style="width: 61%;">
-<col style="width: 22%;">
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
 </colgroup>
 <thead>
 <tr>
@@ -3216,15 +3217,15 @@ A reset also affects all predecessor modules used by this configuration and will
 </table>
 </div>
 <div class="sect2">
-<h3 id="_skeleton_configurationstatus"><a class="anchor" href="#_skeleton_configurationstatus"></a>5.4. Skeleton_ConfigurationStatus</h3>
+<h3 id="_skeleton_configurationstatus"><a class="anchor" href="#_skeleton_configurationstatus"></a><a class="link" href="#_skeleton_configurationstatus">5.4. Skeleton_ConfigurationStatus</a></h3>
 <div class="paragraph">
 <p>config status</p>
 </div>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 16%;">
-<col style="width: 61%;">
-<col style="width: 22%;">
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
 </colgroup>
 <thead>
 <tr>
@@ -3241,11 +3242,17 @@ A reset also affects all predecessor modules used by this configuration and will
 <td class="tableblock halign-left valign-middle"><p class="tableblock">&lt; string &gt; array</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>commandQueue</strong><br>
+<em>required</em></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">commands waiting to be executed</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">&lt; enum (start, stop, reset, recover) &gt; array</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>estimatedFinishTime</strong><br>
 <em>optional</em></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">estimated time to finish processing of this configChain<br>
 <strong>Default</strong> : <code>-1</code></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">integer(int64)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">integer (int64)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>message</strong><br>
@@ -3270,8 +3277,8 @@ A reset also affects all predecessor modules used by this configuration and will
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>progress</strong><br>
 <em>required</em></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">processing progress (0.0 - 1.0)<br>
-<strong>Minimum value</strong> : <code>0.0</code><br>
-<strong>Maximum value</strong> : <code>1.0</code></p></td>
+<strong>Minimum value</strong> : <code>0</code><br>
+<strong>Maximum value</strong> : <code>1</code></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">number</p></td>
 </tr>
 <tr>
@@ -3291,28 +3298,28 @@ A reset also affects all predecessor modules used by this configuration and will
 <em>required</em></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">System time when the config was started.<br>
 <strong>Default</strong> : <code>-1</code></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">integer(int64)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">integer (int64)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>status</strong><br>
 <em>required</em></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">current status of config / job<br>
 <strong>Default</strong> : <code>"n/a"</code></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">enum (n/a, init, startup, running, stopping, stopped, finished, error, reset, cleanup)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">enum (n/a, init, starting, running, stopping, stopped, finished, error, recovering, resetting)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>systemTimeProcessing</strong><br>
 <em>required</em></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">System time when the config was / is processed. This time is updated only during processing the config (i.e. status='running').<br>
 <strong>Default</strong> : <code>-1</code></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">integer(int64)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">integer (int64)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>timestamp</strong><br>
 <em>optional</em></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">time of modification<br>
 <strong>Default</strong> : <code>0</code></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">integer(int64)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">integer (int64)</p></td>
 </tr>
 </tbody>
 </table>
@@ -3321,9 +3328,9 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 16%;">
-<col style="width: 61%;">
-<col style="width: 22%;">
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
 </colgroup>
 <thead>
 <tr>
@@ -3338,14 +3345,14 @@ A reset also affects all predecessor modules used by this configuration and will
 <em>required</em></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">computation duration based on the elapsed time between updates of the systemTimeProcessing parameter<br>
 <strong>Default</strong> : <code>-1</code></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">integer(int64)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">integer (int64)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>compuationDurationAverage</strong><br>
 <em>required</em></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">average of the computation duration of 10 preceding iterations based on the elapsed time between updates of the systemTimeProcessing parameter computed using the simple moving average method<br>
 <strong>Default</strong> : <code>-1</code></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">integer(int64)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">integer (int64)</p></td>
 </tr>
 </tbody>
 </table>
@@ -3354,9 +3361,9 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 16%;">
-<col style="width: 61%;">
-<col style="width: 22%;">
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
 </colgroup>
 <thead>
 <tr>
@@ -3370,13 +3377,13 @@ A reset also affects all predecessor modules used by this configuration and will
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>indexEnd</strong><br>
 <em>required</em></p></td>
 <td class="tableblock halign-left valign-middle"></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">integer(int64)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">integer (int64)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>indexStart</strong><br>
 <em>optional</em></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Default</strong> : <code>0</code></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">integer(int64)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">integer (int64)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>pinID</strong><br>
@@ -3388,19 +3395,19 @@ A reset also affects all predecessor modules used by this configuration and will
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>timestampEnd</strong><br>
 <em>required</em></p></td>
 <td class="tableblock halign-left valign-middle"></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">integer(int64)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">integer (int64)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>timestampStart</strong><br>
 <em>optional</em></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Default</strong> : <code>0</code></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">integer(int64)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">integer (int64)</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_skeleton_inputdescription"><a class="anchor" href="#_skeleton_inputdescription"></a>5.5. Skeleton_InputDescription</h3>
+<h3 id="_skeleton_inputdescription"><a class="anchor" href="#_skeleton_inputdescription"></a><a class="link" href="#_skeleton_inputdescription">5.5. Skeleton_InputDescription</a></h3>
 <div class="paragraph">
 <p>Pin Description Schema</p>
 </div>
@@ -3412,9 +3419,9 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 16%;">
-<col style="width: 61%;">
-<col style="width: 22%;">
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
 </colgroup>
 <thead>
 <tr>
@@ -3435,14 +3442,14 @@ A reset also affects all predecessor modules used by this configuration and will
 <em>optional</em></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">maximal number of this type of pin (use this if you want multiple input pins of the same type)<br>
 <strong>Default</strong> : <code>1</code></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">integer(int64)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">integer (int64)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>minPinCount</strong><br>
 <em>optional</em></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">minimal number of this type of pin (set to 0 for optional input pin)<br>
 <strong>Default</strong> : <code>1</code></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">integer(int64)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">integer (int64)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>properties</strong><br>
@@ -3461,15 +3468,15 @@ A reset also affects all predecessor modules used by this configuration and will
 </table>
 </div>
 <div class="sect2">
-<h3 id="_skeleton_inputpin_detections"><a class="anchor" href="#_skeleton_inputpin_detections"></a>5.6. Skeleton_InputPin_Detections</h3>
+<h3 id="_skeleton_inputpin_detections"><a class="anchor" href="#_skeleton_inputpin_detections"></a><a class="link" href="#_skeleton_inputpin_detections">5.6. Skeleton_InputPin_Detections</a></h3>
 <div class="paragraph">
 <p>bounding box</p>
 </div>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 16%;">
-<col style="width: 61%;">
-<col style="width: 22%;">
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
 </colgroup>
 <thead>
 <tr>
@@ -3501,7 +3508,7 @@ A reset also affects all predecessor modules used by this configuration and will
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>timestamp</strong><br>
 <em>required</em></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">first detection</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">integer(int64)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">integer (int64)</p></td>
 </tr>
 </tbody>
 </table>
@@ -3510,9 +3517,9 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 16%;">
-<col style="width: 61%;">
-<col style="width: 22%;">
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
 </colgroup>
 <thead>
 <tr>
@@ -3526,47 +3533,47 @@ A reset also affects all predecessor modules used by this configuration and will
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>bottom</strong><br>
 <em>required</em></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">y position of bottom right point of the rectangle<br>
-<strong>Minimum value</strong> : <code>0.0</code><br>
-<strong>Maximum value</strong> : <code>1.0</code></p></td>
+<strong>Minimum value</strong> : <code>0</code><br>
+<strong>Maximum value</strong> : <code>1</code></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">number</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>left</strong><br>
 <em>required</em></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">x position of top left point of the rectangle<br>
-<strong>Minimum value</strong> : <code>0.0</code><br>
-<strong>Maximum value</strong> : <code>1.0</code></p></td>
+<strong>Minimum value</strong> : <code>0</code><br>
+<strong>Maximum value</strong> : <code>1</code></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">number</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>right</strong><br>
 <em>required</em></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">x position of bottom right point of the rectangle<br>
-<strong>Minimum value</strong> : <code>0.0</code><br>
-<strong>Maximum value</strong> : <code>1.0</code></p></td>
+<strong>Minimum value</strong> : <code>0</code><br>
+<strong>Maximum value</strong> : <code>1</code></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">number</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>top</strong><br>
 <em>required</em></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">y position of top left point of the rectangle<br>
-<strong>Minimum value</strong> : <code>0.0</code><br>
-<strong>Maximum value</strong> : <code>1.0</code></p></td>
+<strong>Minimum value</strong> : <code>0</code><br>
+<strong>Maximum value</strong> : <code>1</code></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">number</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_skeleton_moduledescription"><a class="anchor" href="#_skeleton_moduledescription"></a>5.7. Skeleton_ModuleDescription</h3>
+<h3 id="_skeleton_moduledescription"><a class="anchor" href="#_skeleton_moduledescription"></a><a class="link" href="#_skeleton_moduledescription">5.7. Skeleton_ModuleDescription</a></h3>
 <div class="paragraph">
 <p>Module Description Schema</p>
 </div>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 16%;">
-<col style="width: 61%;">
-<col style="width: 22%;">
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
 </colgroup>
 <thead>
 <tr>
@@ -3637,9 +3644,9 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 16%;">
-<col style="width: 61%;">
-<col style="width: 22%;">
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
 </colgroup>
 <thead>
 <tr>
@@ -3663,9 +3670,9 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 16%;">
-<col style="width: 61%;">
-<col style="width: 22%;">
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
 </colgroup>
 <thead>
 <tr>
@@ -3700,15 +3707,15 @@ A reset also affects all predecessor modules used by this configuration and will
 </table>
 </div>
 <div class="sect2">
-<h3 id="_skeleton_moduleparams"><a class="anchor" href="#_skeleton_moduleparams"></a>5.8. Skeleton_ModuleParams</h3>
+<h3 id="_skeleton_moduleparams"><a class="anchor" href="#_skeleton_moduleparams"></a><a class="link" href="#_skeleton_moduleparams">5.8. Skeleton_ModuleParams</a></h3>
 <div class="paragraph">
 <p>Skeleton Dummy Parameter</p>
 </div>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 16%;">
-<col style="width: 61%;">
-<col style="width: 22%;">
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
 </colgroup>
 <thead>
 <tr>
@@ -3723,28 +3730,28 @@ A reset also affects all predecessor modules used by this configuration and will
 <em>required</em></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">just a place holder<br>
 <strong>Default</strong> : <code>0</code></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">integer(int64)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">integer (int64)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>dummy_dynamic_parameter</strong><br>
 <em>required</em></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">just a place holder for a dynamic parameter<br>
 <strong>Default</strong> : <code>0</code></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">integer(int64)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">integer (int64)</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_skeleton_modulestatus"><a class="anchor" href="#_skeleton_modulestatus"></a>5.9. Skeleton_ModuleStatus</h3>
+<h3 id="_skeleton_modulestatus"><a class="anchor" href="#_skeleton_modulestatus"></a><a class="link" href="#_skeleton_modulestatus">5.9. Skeleton_ModuleStatus</a></h3>
 <div class="paragraph">
 <p>Module Status Schema</p>
 </div>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 16%;">
-<col style="width: 61%;">
-<col style="width: 22%;">
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
 </colgroup>
 <thead>
 <tr>
@@ -3782,7 +3789,7 @@ A reset also affects all predecessor modules used by this configuration and will
 </table>
 </div>
 <div class="sect2">
-<h3 id="_skeleton_outputdescription"><a class="anchor" href="#_skeleton_outputdescription"></a>5.10. Skeleton_OutputDescription</h3>
+<h3 id="_skeleton_outputdescription"><a class="anchor" href="#_skeleton_outputdescription"></a><a class="link" href="#_skeleton_outputdescription">5.10. Skeleton_OutputDescription</a></h3>
 <div class="paragraph">
 <p>Pin Description Schema</p>
 </div>
@@ -3794,9 +3801,9 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 16%;">
-<col style="width: 61%;">
-<col style="width: 22%;">
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
 </colgroup>
 <thead>
 <tr>
@@ -3817,14 +3824,14 @@ A reset also affects all predecessor modules used by this configuration and will
 <em>optional</em></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">maximal number of this type of pin (use this if you want multiple input pins of the same type)<br>
 <strong>Default</strong> : <code>1</code></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">integer(int64)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">integer (int64)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>minPinCount</strong><br>
 <em>optional</em></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">minimal number of this type of pin (set to 0 for optional input pin)<br>
 <strong>Default</strong> : <code>1</code></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">integer(int64)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">integer (int64)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>properties</strong><br>
@@ -3843,15 +3850,15 @@ A reset also affects all predecessor modules used by this configuration and will
 </table>
 </div>
 <div class="sect2">
-<h3 id="_skeleton_outputpin_average"><a class="anchor" href="#_skeleton_outputpin_average"></a>5.11. Skeleton_OutputPin_Average</h3>
+<h3 id="_skeleton_outputpin_average"><a class="anchor" href="#_skeleton_outputpin_average"></a><a class="link" href="#_skeleton_outputpin_average">5.11. Skeleton_OutputPin_Average</a></h3>
 <div class="paragraph">
 <p>This is a completely senseless output pin providing the average color of the area in the bounding box.</p>
 </div>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 16%;">
-<col style="width: 61%;">
-<col style="width: 22%;">
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
 </colgroup>
 <thead>
 <tr>
@@ -3877,7 +3884,7 @@ A reset also affects all predecessor modules used by this configuration and will
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>timestamp</strong><br>
 <em>required</em></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">first detection</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">integer(int64)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">integer (int64)</p></td>
 </tr>
 </tbody>
 </table>
@@ -3886,9 +3893,9 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 16%;">
-<col style="width: 61%;">
-<col style="width: 22%;">
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
 </colgroup>
 <thead>
 <tr>
@@ -3903,21 +3910,21 @@ A reset also affects all predecessor modules used by this configuration and will
 <em>required</em></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">blue<br>
 <strong>Default</strong> : <code>0</code></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">integer(int64)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">integer (int64)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>G</strong><br>
 <em>required</em></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">green<br>
 <strong>Default</strong> : <code>0</code></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">integer(int64)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">integer (int64)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>R</strong><br>
 <em>required</em></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">red<br>
 <strong>Default</strong> : <code>0</code></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">integer(int64)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">integer (int64)</p></td>
 </tr>
 </tbody>
 </table>
@@ -3927,7 +3934,7 @@ A reset also affects all predecessor modules used by this configuration and will
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-03-21 19:01:39 +01:00
+Last updated 2019-01-28 20:21:50 CET
 </div>
 </div>
 </body>

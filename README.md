@@ -28,10 +28,9 @@
 1. start the Demo Server executable
 	- Windows:
 		- if asked, confirm the firewall message
-		- in case the console shows an exception like
-			- `Exception: no network interface found (install at least a loopback adapter)`
-			- then do as suggested:
-		`devmgmt.msc -> Action -> add legacy hardware -> next -> Install the hardware [...] -> next -> Network adapters -> next -> Microsoft Loopback Adapter -> next -> next -> finish`
+		- in case the console shows an exception like `Exception: no network interface found (install at least a loopback adapter)` then do as suggested:
+			- Windows 7: `devmgmt.msc -> Action -> add legacy hardware -> next -> Install the hardware [...] -> next -> Network adapters -> next -> Microsoft Loopback Adapter -> next -> next -> finish`
+			- Windows 10: `hdwwiz.cpl -> next -> Install the hardware [...] -> next -> Network adapters -> next -> Microsoft KM-TEST Loopback Adapter -> next -> next -> finish`
 1. open [http://localhost:2020](http://localhost:2020) in a web browser
 	- you should see the Connected Vision overview page with all available modules
 	- for a bare Demo Server, these are the core modules plus the `Skeleton` module
@@ -42,4 +41,4 @@ See [Module Developer Guide](doc/ModuleDeveloperGuide.md)
 
 ## Using a Connected Vision Module
 
-See [Skeleton Module API documentation](Skeleton/doc/swagger2markup/pdf/index.pdf)
+See [Skeleton Module API documentation](https://htmlpreview.github.io/?https://raw.githubusercontent.com/ConnectedVision/connectedvision-apps/dev/Skeleton/doc/html/index.html)
