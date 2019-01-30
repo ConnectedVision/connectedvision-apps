@@ -41,4 +41,4 @@ See [Module Developer Guide](doc/ModuleDeveloperGuide.md)
 
 ## Using a Connected Vision Module
 
-See [Skeleton Module API documentation](https://htmlpreview.github.io/?https://raw.githubusercontent.com/ConnectedVision/connectedvision-apps/dev/Skeleton/doc/html/index.html)
+See [Skeleton Module API documentation](https://htmlpreview.github.io/?https://raw.githubusercontent.com/ConnectedVision/connectedvision-apps/master/Skeleton/doc/html/index.html)
